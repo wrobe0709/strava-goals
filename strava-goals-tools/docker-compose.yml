@@ -1,0 +1,23 @@
+version: '3'
+services:
+  strava-goals-psql:
+    image: "strava-goals-psql:latest"
+    volumes:
+      - ./schemas/init.sql:/docker-entrypoint-initdb.d/init.sql
+    environment:
+      POSTGRES_DB: strava-goals
+      POSTGRES_USER: postgresql
+      POSTGRES_PASSWORD: postgresql
+    ports:
+      - "5432:5432"
+    container_name: "strava-goals-psql"
+    networks:
+      - strava-goals
+  # strava-goals-api:
+  #   image: "strava-goals-api:latest"
+  #   networks:
+  #     - strava-goals
+  #   ports:
+  #     - "4000:4000"
+networks:
+  strava-goals:

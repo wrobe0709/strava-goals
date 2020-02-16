@@ -1,23 +1,30 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+/strava-goals-ui-old
+
+#### strava-goals-ui ####
 # dependencies
-/node_modules
-/.pnp
-.pnp.js
+/strava-goals-ui/node_modules
+strava-goals-ui/.pnp
+strava-goals-ui/.pnp.js
 
 # testing
-/coverage
+strava-goals-ui/coverage
 
 # production
-/build
+strava-goals-ui/build
 
 # misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+strava-goals-ui/.DS_Store
+strava-goals-ui/.env.local
+strava-goals-ui/.env.development.local
+strava-goals-ui/.env.test.local
+strava-goals-ui/.env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+strava-goals-ui/npm-debug.log*
+strava-goals-ui/yarn-debug.log*
+strava-goals-ui/yarn-error.log*
+
+#### strava-goals-api ####
+# dependencies
+/strava-goals-api/node_modules
