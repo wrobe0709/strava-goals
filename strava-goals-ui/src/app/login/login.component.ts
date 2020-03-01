@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { LoginService } from './login.service';
 import { STRAVA_CLIENT_ID, STRAVA_REDIRECT_URI, STRAVA_RESPONSE_TYPE, STRAVA_SCOPE } from '../constants';
+import { LoginService } from './login.service';
 
 @Component({
   selector: 'app-login',
